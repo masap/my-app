@@ -27,5 +27,5 @@ jobs:
       deployments: write
       pages: write
     with:
-      target_branch: gh-pages
+      target_branch: ${{ github.ref_name }}
       tagged_release: ${{ github.ref_name }}
