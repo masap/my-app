@@ -4,6 +4,14 @@ on:
   workflow_dispatch:
   release:
     types: [released]
+  workflow_call:
+    inputs:
+      target_branch:
+        required: true
+        type: string
+      tagged_release:
+        required: true
+        type: string
 
 defaults:
   run:
