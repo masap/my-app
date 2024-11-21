@@ -28,4 +28,4 @@ jobs:
       pages: write
     with:
       target_branch: main
-      tagged_release: my-app-0.9.0
+      tagged_release: ${{ github.ref_name }}
