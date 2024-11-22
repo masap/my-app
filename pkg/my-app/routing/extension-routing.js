@@ -1,12 +1,10 @@
 import Dashboard from '../pages/index.vue';
-
-const BLANK_CLUSTER = '_';
-const YOUR_PRODUCT_NAME = 'myProductName';
+import { CUSTOM_PAGE_NAME, YOUR_PRODUCT_NAME, BLANK_CLUSTER } from '../constants';
 
 const routes = [
   {
-    name: `${YOUR_PRODUCT_NAME}-c-cluster`,
-    path: `/${YOUR_PRODUCT_NAME}/c/:cluster`,
+    name: `${YOUR_PRODUCT_NAME}-c-cluster-${ CUSTOM_PAGE_NAME }`,
+    path: `/${YOUR_PRODUCT_NAME}/c/:cluster/${ CUSTOM_PAGE_NAME }`,
     component: Dashboard,
     meta: {
       product: YOUR_PRODUCT_NAME,

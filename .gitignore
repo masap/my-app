@@ -35,6 +35,7 @@ coverage
 !.vscode/extensions.json
 
 # misc
+dist-pkg
 .sass-cache
 connect.lock
 typings
